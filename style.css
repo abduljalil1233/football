@@ -97,14 +97,6 @@ body{
  }
 
 
-
-
-
-
-
-
-
-
  .texted{
   padding: 12px 14px;
  }
@@ -114,11 +106,6 @@ body{
  }
  
 
-
-
-
-
- 
  .last2{
   color: aliceblue;
   margin-right: 20px;
@@ -144,7 +131,7 @@ body{
   margin-right: 100px;
   color: aliceblue;
  }
-  
+  /* responsive */
   
 @media all and (max-width: 992px){
   .container5{
@@ -157,7 +144,16 @@ body{
 @media all and (max-width: 768px){
   .container3{
     display: block;
+   
   }
+  .container4{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    background: none;
+   padding-left: 3%;
+  }
+  
   .container5{
     display: grid; 
     grid-template-columns: repeat(2, 1fr);
@@ -173,8 +169,19 @@ body{
   .last1{
     display: block; 
     text-align: center;
+   
   }
+  .container4{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+    background: none;
+  }
+ .imager image{
+  align-items: center;
+ }
   .last2{
     margin-top: 7px;
+    margin-right: 10px;
   }
 }
